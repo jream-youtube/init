@@ -34,6 +34,9 @@ def run():
     if (item == 'name'):
       repo_name = data[0]['name']
 
+      if repo_name == 'init':
+        continue
+
       if os.path.isdir("./%s" % repo_name):
         print ("[+] Folder {0}{1}{2} exists, running git pull".format(color.bold, repo_name, color.clear))
         proc = Popen(['git', 'pull'], stdout=PIPE)
