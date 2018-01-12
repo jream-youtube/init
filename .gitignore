@@ -1,0 +1,9 @@
+*
+!.gitignore
+!update.py
+!README.md
+!clone.py
+!init.py
+!commit.py
+!LICENSE
+!LICENSE.md
